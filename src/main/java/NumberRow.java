@@ -1,4 +1,3 @@
-import java.util.SortedMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class NumberRow {
@@ -80,7 +79,7 @@ public class NumberRow {
         }
     }
 
-    public void printNumbers(){
+    public void number(){
         synchronized (this) {
             do{
                 if (this.queuePrinter.isEmpty() && counter <= maxNumber) {

@@ -22,7 +22,7 @@ public class CounterMain {
         Thread threadD = new Thread(new ThreadNumberChecker(numberRow) {
             @Override
             public void run() {
-                super.getNumberRow().printNumbers();
+                super.getNumberRow().number();
             }
         });
         threadC.start();
